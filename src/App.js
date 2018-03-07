@@ -4,6 +4,7 @@ import './App.css';
 
 class App extends Component {
   render() {
+    const rate = 1;
     return (
       <div className="App">
         <header className="App-header">
@@ -11,7 +12,9 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          {
+            "★★★★★☆☆☆☆☆".slice(5 - rate, 10 - rate)
+          }
         </p>
       </div>
     );
